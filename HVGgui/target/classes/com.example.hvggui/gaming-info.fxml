@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="gameBoard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="625.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hvggui.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="84.0" layoutY="5.0" prefHeight="37.0" prefWidth="463.0" style="-fx-background-color: black;" text="Humans Versus Goblins" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="map" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="259.0" layoutX="20.0" layoutY="50.0" stroke="WHITE" strokeType="INSIDE" width="370.0" />
+      <ImageView fx:id="humImg" fitHeight="37.0" fitWidth="37.0" layoutX="20.0" layoutY="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="gobImg" fitHeight="37.0" fitWidth="37.0" layoutX="20.0" layoutY="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+      <Button contentDisplay="CENTER" layoutX="212.0" layoutY="360.0" mnemonicParsing="false" onAction="#moveRight" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: DODGERBLUE;" text="Right">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button layoutX="165.0" layoutY="393.0" mnemonicParsing="false" onAction="#moveDown" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: DODGERBLUE;" text="Down">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="110.0" layoutY="360.0" mnemonicParsing="false" onAction="#moveLeft" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: DODGERBLUE;" text="Left">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button contentDisplay="CENTER" layoutX="165.0" layoutY="328.0" mnemonicParsing="false" onAction="#moveUp" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: DODGERBLUE;" text="Up">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <TextArea fx:id="fightText" editable="false" layoutX="407.0" layoutY="50.0" prefHeight="259.0" prefWidth="179.0" style="-fx-background-color: DODGERBLUE;" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></TextArea>
+      <TextArea fx:id="statusText" editable="false" layoutX="407.0" layoutY="322.0" prefHeight="121.0" prefWidth="179.0" style="-fx-background-color: DODGERBLUE;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>
